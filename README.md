@@ -1,4 +1,4 @@
-# How much is too much Internet?
+# How much is too much screen time?
 While the personal computer has become an integral part of our daily lives, transforming the way we work, communicate, the dark side of chronic computer usage is often overlooked. The adverse effects of using it too much mustn't be ignored or downplayed by anyone. Obesity, sleep problems, chronic neck and back problems, depression, and anxiety are only the tip of the iceberg when it comes to the negative effects brought upon by being on your computer for too long, and on this blog I will shed some light on them plus give some suggestions to attempt to remedy them when possible. I hope you enjoy reading through it. :) 
 # Post no. 1: Why exactly do people spend too much time using their PCs to begin with?
 In today's day and age, lots of people prefer spending time on their computers rather than doing anything else. What are the reasons behind this, you ask? Well,
