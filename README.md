@@ -24,4 +24,4 @@ The incessant notifications, emails, and social media updates that accompany pro
 
 Prolonged computer use often leads to communication breakdown between people as well. Instead of engaging in heartfelt conversations or sharing vulnerabilities, individuals may turn to the temporary gratification offered by screens. Misinterpretations of text messages or the lack of non-verbal cues can result in misunderstandings and conflict. Over time, this erosion of effective communication can weaken the bonds between partners, friends, and family members.
 
-it's crucial to recognize the potential damage computers can inflict on our relationships, lest we let go of our ourselves and let ourselves use them excessively.
+it's crucial to recognize the potential damage computers can inflict on our relationships, lest we let go of ourselves and let ourselves use them excessively.
