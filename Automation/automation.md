@@ -1,0 +1,1 @@
+Here's where I'll be explaining the details of my automation project, which will be about a python script that initializes a rudimentary screen time limit and displays a notification when the pre-defined time limit is reached.
