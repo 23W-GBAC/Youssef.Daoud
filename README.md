@@ -1,5 +1,7 @@
-# How much is too much screen time?
-While the personal computer has become an integral part of our daily lives, transforming the way we work and communicate and many other things, the dark side of chronic computer usage is often overlooked. The adverse effects of using it too much mustn't be ignored or downplayed by anyone. Obesity, sleep problems, chronic neck and back problems, depression, and anxiety are only the tip of the iceberg when it comes to the negative effects brought upon by being on your computer for too long, and on this blog I will shed some light on them plus give some suggestions to attempt to remedy them when possible. I hope you enjoy reading through it. :) 
+# Unraveling the Threads: The Intersection of Coding and Language Business Models
+As someone deeply immersed in the realms of languages, both in their origins and in the process of learning, the fusion of coding and language business models presents a fascinating avenue for exploration. This topic resonates with me on multiple levels, reflecting not only my expertise but also my innate curiosity about the ways in which technology and linguistics intersect to shape the world around us.
+![image](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/3175e622-d23c-49bb-b265-242ee8d77028)
+ 
 Here's the [documentation](https://github.com/23W-GBAC/Youssef.Daoud/blob/practice-branch/Automation/automation.md) to my automation project by the way.
 # Post no. 1: Why exactly do people spend too much time using their PCs to begin with?
 In today's day and age, lots of people prefer spending time on their computers rather than doing anything else. What are the reasons behind this, you ask? Well,
