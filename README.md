@@ -6,7 +6,6 @@ Moreover, my background in language origins lends itself naturally to an explora
 
 The topic of leveraging language origins and learning expertise in coding and language business models resonates with me due to my unique blend of skills, experiences, and entrepreneurial aspirations. By exploring this intersection, I aim to uncover new opportunities, drive innovation, and make a meaningful impact in the dynamic landscape of language and technology.
 In essence, the topic of leveraging language origins and learning expertise in coding and language business models resonates with me due to my unique blend of skills, experiences, and entrepreneurial aspirations. By exploring this intersection, I aim to uncover new opportunities, drive innovation, and make a meaningful impact in the dynamic landscape of language and technology.
-![image](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/d12ad02a-b081-4215-bc3d-3e01b800ee47)
 
 
 
