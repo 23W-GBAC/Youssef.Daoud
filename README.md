@@ -10,7 +10,7 @@ In essence, the topic of leveraging language origins and learning expertise in c
 
 
 
-[Link to the first blog post](https://github.com/23W-GBAC/Youssef.Daoud/blob/new-topic-branch/post1.md)
+## [Link to the first blog post](https://github.com/23W-GBAC/Youssef.Daoud/blob/new-topic-branch/post1.md)
  
 Here's the [documentation](https://github.com/23W-GBAC/Youssef.Daoud/blob/practice-branch/Automation/automation.md) to my automation project by the way.
 # Post no. 1: Why exactly do people spend too much time using their PCs to begin with?
