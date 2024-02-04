@@ -1,6 +1,8 @@
 name: Check Last Modified
 
 on:
+  schedule:
+    - cron: '*/1 * * * *'  # Run every 1 minute
   push:
     branches:
       - main
