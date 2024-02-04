@@ -27,6 +27,25 @@ def get_last_modified(username, repository, file_path, github_token=None):
         print(f"Error: {e}")
         return None
 
+def update_markdown_file(file_path, last_modified_date_str):
+    try:
+        with open(file_path, 'r') as file:
+            content = file.readlines()
+
+        # Iterate through lines to find and update the "Last modified" line
+        for i, line in enumerate(content):
+            if line.startswith("Last modified"):
+                content[i] = f"Last modified: {last_modified_date_str}\n"
+                break
+        else:
+            # If the "Last modified" line doesn't exist, add it to the end of the file
+            content.append(f"\nLast modified: {last_modified_date_str}\n")
+
+        with open(file_path, 'w') as file:
+            file.writelines(content)
+    except Exception as e:
+        print(f"Error updating Markdown file: {e}")
+
 def main():
     if 'GITHUB_ACTIONS' in os.environ:
         # Running in GitHub Actions environment
@@ -48,10 +67,15 @@ def main():
         last_modified_date_utc = get_last_modified(username, repository, file_path, github_token)
 
         if last_modified_date_utc:
+            # Convert UTC time to 'Europe/Paris' (UTC+1) and format without timezone information
             utc_plus_one = pytz.timezone('Europe/Paris')
             last_modified_date_tz = last_modified_date_utc.astimezone(utc_plus_one)
             last_modified_date_str = last_modified_date_tz.strftime('%Y-%m-%d %H:%M:%S')
-            print(f"File: {file_name}, Last modified: {last_modified_date_str}")
+
+            # Update the Markdown file with the last modified date
+            update_markdown_file(file_path, last_modified_date_str)
+            
+            print(f"File: {file_name}, Last modified: {last_modified_date_str} (Updated in the file)")
         else:
             print(f"Unable to retrieve last modification date for file: {file_name}")
 
