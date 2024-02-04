@@ -1,9 +1,10 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+
 defaults:
   - scope:
       path: "" # Empty string for all files
     values:
       layout: "post"
-      last_modified_at: "{{ site.time }}"
+      last_modified_at: "{{ site.time | date: '%Y-%m-%d %H:%M:%S %z' }}"
