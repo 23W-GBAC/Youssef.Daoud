@@ -39,14 +39,21 @@ def main():
         repository = input("Enter the GitHub repository name: ")
         github_token = None
 
-    file_path = input("Enter the path of the Markdown file in the repository: ")
+    # Set the directory containing Markdown files
+    markdown_files_dir = 'path/to/your/markdown/files'
 
-    last_modified_date = get_last_modified(username, repository, file_path, github_token)
+    # List all Markdown files in the directory
+    markdown_files = [file for file in os.listdir(markdown_files_dir) if file.endswith('.md')]
 
-    if last_modified_date:
-        print(f"Last modified on: {last_modified_date}")
-    else:
-        print("Unable to retrieve last modification date.")
+    # Iterate through each Markdown file and get the last modified date
+    for file_name in markdown_files:
+        file_path = os.path.join(markdown_files_dir, file_name)
+        last_modified_date = get_last_modified(username, repository, file_path, github_token)
+
+        if last_modified_date:
+            print(f"File: {file_name}, Last modified on: {last_modified_date}")
+        else:
+            print(f"Unable to retrieve last modification date for file: {file_name}")
 
 if __name__ == "__main__":
     main()
