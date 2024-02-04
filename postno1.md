@@ -33,4 +33,4 @@ Programming can be a solitary pursuit, but it doesn't have to be. Joining online
 
 Learning to code may seem intimidating at first, but with dedication, perseverance, and the right resources, anyone can become a proficient programmer. By understanding the basics of programming languages, choosing the right language to learn, and embracing a mindset of continuous learning and practice, you'll be well on your way to mastering the language of programming. So, roll up your sleeves, fire up your text editor, and start coding!
 
-## [Link to the main page](README.md)   / [Link to the 2nd blog post](postno2.md)
+## [Link to the main page](README.md)   / [Link to the next blog post](postno2.md)
