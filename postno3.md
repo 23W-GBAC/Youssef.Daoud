@@ -26,3 +26,5 @@ Language learning communities offer valuable support networks for women aspiring
  Conclusion:
 
 In conclusion, language learning is a powerful tool for empowering women in tech, offering them access to global opportunities, enhancing their communication skills, fostering cultural competence, breaking stereotypes, and creating supportive communities. By embracing language education, women can overcome barriers, shatter glass ceilings, and play a pivotal role in driving innovation and progress in the tech industry.
+
+## [Link to the main page](README.md) / [Link to the previous blog post](postno2.md) / [Link to the next blog post](postno4.md)
