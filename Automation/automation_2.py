@@ -48,8 +48,8 @@ def main():
         last_modified_date_utc = get_last_modified(username, repository, file_path, github_token)
 
         if last_modified_date_utc:
-            # Format the last modified date without timezone information
-            last_modified_date_str = last_modified_date_utc.strftime('%Y-%m-%d %H:%M:%S')
+            last_modified_date_tz = last_modified_date_utc.astimezone(pytz.timezone('Europe/Paris'))
+            last_modified_date_str = last_modified_date_tz.strftime('%Y-%m-%d %H:%M:%S')
             print(f"File: {file_name}, Last modified: {last_modified_date_str}")
         else:
             print(f"Unable to retrieve last modification date for file: {file_name}")
