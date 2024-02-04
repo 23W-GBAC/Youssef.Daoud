@@ -40,7 +40,7 @@ def main():
         github_token = None
 
     # Set the directory containing Markdown files
-    markdown_files_dir = 'Youssef.Daoud/tree/main'
+    markdown_files_dir = ''
 
     # List all Markdown files in the directory
     markdown_files = [file for file in os.listdir(markdown_files_dir) if file.endswith('.md')]
