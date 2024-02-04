@@ -49,7 +49,7 @@ def main():
 
         if last_modified_date_utc:
             # Convert UTC time to UTC+1
-            utc_plus_one = pytz.timezone('UTC+1')
+            utc_plus_one = pytz.timezone('Europe/Paris')
             last_modified_date_tz = last_modified_date_utc.astimezone(utc_plus_one)
             print(f"File: {file_name}, Last modified in UTC+1: {last_modified_date_tz}")
         else:
