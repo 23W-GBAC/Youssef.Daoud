@@ -34,3 +34,4 @@ As technology continues to advance, the intersection of language learning and co
 In conclusion, the evolution of coding languages has transformed not only the field of technology but also the way we approach language learning. By recognizing the parallels between spoken languages and programming languages, we can revolutionize education and empower individuals to thrive in an increasingly interconnected global society.
 
 
+## [Link to the main page](README.md) / [Link to the previous blog post](postno1.md) / [Link to the next blog post](postno3.md)
