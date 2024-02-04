@@ -13,3 +13,4 @@ Embracing the Future:
 
 As we continue to navigate an increasingly interconnected world, the importance of bridging the gap between language and technology has never been more apparent. By embracing innovation and collaboration at the intersection of these two disciplines, we can unlock new opportunities for personal and professional growth, drive social and economic progress, and ultimately build a more inclusive and connected global community. Together, let's embark on this journey of exploration and discovery, and harness the power of language and technology to shape a brighter future for generations to come.
 
+## [Link to the main page](README.md) / [Link to the previous blog post](postno3.md)
