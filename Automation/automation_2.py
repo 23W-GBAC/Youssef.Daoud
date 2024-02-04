@@ -1,6 +1,7 @@
 import os
 import requests
 from datetime import datetime
+import pytz
 
 def get_last_modified(username, repository, file_path, github_token=None):
     try:
@@ -16,8 +17,8 @@ def get_last_modified(username, repository, file_path, github_token=None):
         if response.status_code == 200:
             last_commit_data = response.json()[0]
             last_commit_date_str = last_commit_data['commit']['committer']['date']
-            last_commit_date = datetime.strptime(last_commit_date_str, '%Y-%m-%dT%H:%M:%SZ')
-            return last_commit_date
+            last_commit_date_utc = datetime.strptime(last_commit_date_str, '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=pytz.UTC)
+            return last_commit_date_utc
         else:
             print(f"GitHub API error: {response.status_code} - {response.text}")
             return None
@@ -44,10 +45,13 @@ def main():
     # Iterate through each Markdown file and get the last modified date
     for file_name in markdown_files:
         file_path = file_name
-        last_modified_date = get_last_modified(username, repository, file_path, github_token)
+        last_modified_date_utc = get_last_modified(username, repository, file_path, github_token)
 
-        if last_modified_date:
-            print(f"File: {file_name}, Last modified on: {last_modified_date}")
+        if last_modified_date_utc:
+            # Convert UTC time to UTC+1
+            utc_plus_one = pytz.timezone('UTC+1')
+            last_modified_date_tz = last_modified_date_utc.astimezone(utc_plus_one)
+            print(f"File: {file_name}, Last modified in UTC+1: {last_modified_date_tz}")
         else:
             print(f"Unable to retrieve last modification date for file: {file_name}")
 
