@@ -34,7 +34,7 @@ def update_markdown_file(file_path, last_modified_date_str):
             content = file.read()
 
         # Replace the "Last modified" line with the updated information
-        updated_content = re.sub(r'"Last modified":.*', f'"Last modified": {last_modified_date_str}', content)
+        updated_content = re.sub(r'Last modified:.*', f'Last modified: {last_modified_date_str}', content)
 
         with open(file_path, 'w') as file:
             file.write(updated_content)
