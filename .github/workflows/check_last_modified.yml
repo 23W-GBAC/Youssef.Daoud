@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests pytz
+          pip install requests pytz re
 
       - name: Run script
         run: python Automation/automation_2.py
