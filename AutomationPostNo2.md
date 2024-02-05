@@ -1,4 +1,4 @@
-# Exploring Solutions and Ideas for my automation project:
+# Exploring possible solutions for my automation project:
 
 GitHub Actions:
 GitHub Actions is a powerful automation and workflow orchestration tool provided by GitHub. Leveraging GitHub Actions to find the last modification date of Markdown files involves creating a custom workflow that triggers on events like code pushes or pull requests. The workflow can include steps to check out the repository, locate Markdown files, and extract their last modification date.
