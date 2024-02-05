@@ -1,4 +1,4 @@
-# [Main Page](README.md) / [1st Post](postno1.md) / [2nd Post](postno2.md) / [3rd Post](postno3.md) / 4th Post / [Automation](Automation/automation.md)
+# [Main Page](README.md) / [1st Post](postno1.md) / [2nd Post](postno2.md) / [3rd Post](postno3.md) / 4th Post 
 ![POST 4 - person-working-html-computer_23-2150038853](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/bbfc0b21-0705-4a0d-a7dd-9a7cabbd6ef9)
 
 
