@@ -2,6 +2,7 @@ import os
 import requests
 from datetime import datetime
 import pytz
+import re
 
 def get_last_modified(username, repository, file_path, github_token=None):
     try:
@@ -32,9 +33,12 @@ def update_markdown_file(file_path, last_modified_date_str):
         with open(file_path, 'r') as file:
             content = file.readlines()
 
+        # Define a regular expression pattern to match "Last modified:" lines
+        pattern = re.compile(r'^Last modified:.*$')
+
         # Iterate through lines to find and update the "Last modified" line
         for i, line in enumerate(content):
-            if line.startswith("Last modified"):
+            if pattern.match(line):
                 content[i] = f"Last modified: {last_modified_date_str}\n"
                 break
         else:
