@@ -31,19 +31,13 @@ def get_last_modified(username, repository, file_path, github_token=None):
 def update_markdown_file(file_path, last_modified_date_str):
     try:
         with open(file_path, 'r') as file:
-            content = file.readlines()
+            content = file.read()
 
-        # Iterate through lines to find and update lines containing "Last modified"
-        for i, line in enumerate(content):
-            if "Last modified" in line:
-                content[i] = f'"Last modified": {last_modified_date_str}\n'
-                break
-        else:
-            # If no line contains "Last modified", add a new line at the end of the file
-            content.append(f'"Last modified": {last_modified_date_str}\n')
+        # Replace the "Last modified" line with the updated information
+        updated_content = re.sub(r'"Last modified":.*', f'"Last modified": {last_modified_date_str}', content)
 
         with open(file_path, 'w') as file:
-            file.writelines(content)
+            file.write(updated_content)
     except Exception as e:
         print(f"Error updating Markdown file: {e}")
 def main():
