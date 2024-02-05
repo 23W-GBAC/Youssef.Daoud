@@ -1,3 +1,6 @@
+![POST 2 - person-working-html-computer](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/dab54099-ec2c-466c-bc34-4f3cdda320c3)
+
+
 ### Revolutionizing Language Learning through Coding
 Just as spoken languages evolve over time, so too do programming languages. In this post, we'll take a journey through the history of coding languages, from the early days of binary code to the rise of modern languages like Python. By understanding the evolution of coding languages, we can gain valuable insights into the principles that underpin contemporary programming paradigms.
 
