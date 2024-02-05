@@ -1,4 +1,4 @@
-# Main Page / [1st Post](postno1.md) / [2nd Post](postno2.md) / [3rd Post](postno3.md) / [4th Post](postno4.md) / [Automation](Automation/automation.md) 
+# Main Page / [1st Post](postno1.md) / [2nd Post](postno2.md) / [3rd Post](postno3.md) / [4th Post](postno4.md) 
 
 ![MAIN - programming-background-with-html-text](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/e2c6d5f9-a5f9-46b6-b9eb-bb04b42793cc)
 
@@ -13,3 +13,4 @@ Furthermore, my experience with languages has equipped me with valuable insights
 The topic of leveraging language origins and learning expertise in coding and language business models resonates a lot with me. By exploring this intersection, I aim to uncover new opportunities, drive innovation, and make a meaningful impact in this landscape.
 
 ## [Link to the next blog post](postno1.md)
+## [Link to the first automation post](Automation Post No.1.md)
