@@ -1,4 +1,4 @@
-# [Main Page](README.md) / 1st Post / [2nd Post](postno2.md) / [3rd Post](postno3.md) / [4th Post](postno4.md) / [Automation](automation.md) 
+# [Main Page](README.md) / 1st Post / [2nd Post](postno2.md) / [3rd Post](postno3.md) / [4th Post](postno4.md) / [Automation](Automation/automation.md)
 ![POST 1 - programming-language-workplace](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/69c3cd5c-63a2-45e8-84a5-14e4b53bcacd)
 
 ### Decoding Programming: A Beginner's Guide
