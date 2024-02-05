@@ -33,16 +33,16 @@ def update_markdown_file(file_path, last_modified_date_str):
         with open(file_path, 'r') as file:
             content = file.readlines()
 
-        # Define a regular expression pattern to match "Last modified:" lines
-        pattern = re.compile(r'^.*Last modified:.*$')
+        # Define a regular expression pattern to match lines containing "Last modified"
+        pattern = re.compile(r'.*Last modified:.*')
 
-        # Iterate through lines to find and update the "Last modified" line
+        # Iterate through lines to find and update lines containing "Last modified"
         for i, line in enumerate(content):
             if pattern.match(line):
                 content[i] = f'"Last modified": {last_modified_date_str}\n'
                 break
         else:
-            # If the "Last modified" line doesn't exist, add it to the end of the file
+            # If no line contains "Last modified", add a new line at the end of the file
             content.append(f'"Last modified": {last_modified_date_str}\n')
 
         with open(file_path, 'w') as file:
