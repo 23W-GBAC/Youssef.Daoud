@@ -1,6 +1,7 @@
+![POST 3 - scene-with-business-person-working-futuristic-office-job_23-2151003704](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/22583d06-637a-46da-803e-0d46a3ef5849)
+
+
 ### Breaking Barriers: Empowering Women in Tech Through Language Learning
-
-
 Women remain underrepresented in the field of technology, but language learning presents a unique opportunity to bridge this gender gap. In this post, we'll explore how language education can empower women to pursue careers in tech, breaking down barriers and fostering inclusivity in the digital workforce. From coding boot camps to online language courses, there are countless resources available to support women on their journey to tech proficiency.
 
 Access to Global Opportunities:
