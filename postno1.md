@@ -1,3 +1,6 @@
+![POST 1 - programming-language-workplace](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/69c3cd5c-63a2-45e8-84a5-14e4b53bcacd)
+
+
 ### Decoding Programming: A Beginner's Guide
 In today's increasingly digitized world, the ability to code is more valuable and important than ever before. But for many people starting out, the world of programming can seem daunting, inaccessible, almost impossible to get into comfortably. In this post, I'll attempt to demystify the languages of programming and provide practical tips for aspiring folks looking to embark on a learning journey.
 
