@@ -25,6 +25,6 @@ jobs:
           pip install requests pytz 
 
       - name: Run script
-        run: python Automation/automation_2.py
+        run: python automation_2.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
