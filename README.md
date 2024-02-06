@@ -14,3 +14,7 @@ Furthermore, my experience with languages has equipped me with valuable insights
 The topic of leveraging language origins and learning expertise in coding and language business models resonates a lot with me. By exploring this intersection, I aim to uncover new opportunities, drive innovation, and make a meaningful impact in this landscape.
 
 ## [Link to the next blog post](postno1.md)
+
+References & Resources:
+ChatGPT, Google Bard: Text Content.
+Freepik: Royalty Free Images.
