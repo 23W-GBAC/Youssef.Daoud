@@ -58,21 +58,43 @@ Step 4: Run the script:
 
 ============================================
 
-Now, as for the python script itself, 
+Now, as for the python script itself; this Python script interacts with the GitHub API to retrieve the last modified date of the markdown files found in the root directory of my GitHub repository. Here's a breakdown of the code and what it does:
 
-By implementing GitHub Actions for automated deployment, several potential advantages can be realized:
+## Imports:
 
-Increased Efficiency: Automation eliminates the need for manual intervention in the deployment process, saving time and reducing the risk of human error. Developers can focus on writing code and implementing features rather than managing deployment tasks.
-Consistency and Reliability: Defined workflows ensure that deployments are performed consistently and reliably, following the same steps each time. This consistency enhances the predictability of the deployment process and reduces the likelihood of deployment-related issues.
-Scalability: Automated deployment scales seamlessly with the growth of the project, accommodating increased workload and complexity without additional effort. As the project evolves, the deployment workflow can be adapted and expanded to meet new requirements and challenges.
-Continuous Integration: Integration with version control enables continuous integration practices, allowing changes to be tested and deployed automatically as they are introduced. This iterative development approach promotes collaboration, feedback, and rapid iteration, leading to faster delivery of new features and improvements.
-Community Support: GitHub Actions has a large and active community, with a wide range of pre-built actions and workflows available for common use cases. Developers can leverage existing resources, share knowledge, and collaborate with others to enhance their deployment workflows.
+os: Provides a way to interact with the operating system, used for environment variables and file operations.
+requests: Allows sending HTTP requests, used for communicating with the GitHub API.
+datetime: Provides classes for working with dates and times.
+pytz: Handles time zones.
+markdown: Used for processing markdown files.
 
-However, it is essential to consider potential disadvantages and limitations of the chosen solution:
+## get_last_modified Function:
+Accepts GitHub username, repository name, file_path of the Markdown file, and an optional github_token for authentication.
+Sends a request to the GitHub API to get the latest commit information for the specified file.
+Extracts the commit date, converts it to UTC, and returns the result.
+If an error occurs during the API request, it prints an error message and returns None.
 
-Learning Curve: Implementing GitHub Actions may require familiarity with YAML syntax, GitHub workflows, and related concepts, which could pose a learning curve for users new to the platform. Proper documentation, tutorials, and support resources are essential to facilitate the adoption and mastery of GitHub Actions.
-Complexity: Depending on the complexity of the deployment process and project requirements, configuring and maintaining the workflow file may require advanced knowledge and troubleshooting skills. Developers must carefully design the workflow to handle edge cases, error conditions, and dependencies effectively.
-Dependency on GitHub: GitHub Actions is tightly integrated with the GitHub platform, meaning that reliance on this service could pose a risk if there are service disruptions or changes to the platform's policies. Implementing backup and contingency plans ensures continuity of the deployment process in case of unforeseen issues.
-Resource Limitations: GitHub imposes limitations on usage quotas for Actions workflows, including execution time, storage, and concurrent jobs, which could impact larger or resource-intensive projects. Developers must optimize workflows, manage resource usage efficiently, and monitor usage metrics to avoid exceeding quotas and encountering disruptions.
+## main Function:
+Checks if the script is running in a GitHub Actions environment by checking the presence of the GITHUB_ACTIONS environment variable.
+If running in GitHub Actions:
+Retrieves GitHub-related environment variables like GITHUB_TOKEN, GITHUB_REPOSITORY_OWNER, and GITHUB_REPOSITORY.
+If running locally:
+Prompts the user to enter their GitHub username and repository name.
+Lists all Markdown files in the current directory.
+Iterates through each Markdown file, calling get_last_modified to fetch the last modified date.
+Converts the UTC time to the 'Europe/Paris' time zone (UTC+1) and prints the file name along with the last modified date.
+Handles cases where the last modified date cannot be retrieved.
 
-In conclusion, implementing GitHub Actions for automated deployment offers significant advantages in terms of efficiency, reliability, and scalability, making it a compelling solution for streamlining the deployment process of websites and blogs hosted on GitHub Pages. However, careful consideration of potential challenges and limitations is essential to ensure successful implementation and ongoing maintenance of the automated deployment workflow. With proper planning, configuration, and monitoring, GitHub Actions can greatly enhance the development workflow and contribute to the overall success of the project.
+## if __name__ == "__main__":
+This block ensures that the main function is executed when the script is run directly and not when it's imported as a module.
+
+## Execution:
+
+When the script is run, it either uses GitHub Actions environment variables or prompts the user for input.
+It then lists all Markdown files in the current directory and fetches and prints the last modified date for each file using the GitHub API. The script prints error messages to the console if there are issues with GitHub API requests or if it fails to retrieve the last modified date for a file.
+
+## Advantages:
+To me, the advantages mostly lie in this solution's simplicity and the fact that it didn't take a long time to get running compared to the other previously-tried methods. There's also enough room for improving the whole thing in different ways to give it more usage in the future for things like being integrated into a continuous integration/continuous deployment (CI/CD) pipeline or visibility notifications and stuff like that.
+
+## Disadvantages:
+Of course there are some disadvantages to the whole approach too, it's not really perfect; the GitHub API is subject to rate limiting, so too many script calls will probably result in rate-limiting issues. The whole script relies on the availability and reliability of GitHub's API so if GitHub experiences downtime or if there are changes to the API, the script could stop wokring automatically or something like that. There's also the fact that the script is dependent on GitHub for working so it can't be used elsewhere in an automated way easily without figuring out a whole new way to make it work elsewhere.
