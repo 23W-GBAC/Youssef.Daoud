@@ -70,8 +70,11 @@ This block ensures that the main function is executed when the script is run dir
 
 ## Execution:
 
-When the script is run, it either uses GitHub Actions environment variables or prompts the user for input.
-It then lists all Markdown files in the current directory and fetches and prints the last modified date for each file using the GitHub API. The script prints error messages to the console if there are issues with GitHub API requests or if it fails to retrieve the last modified date for a file.
+When the script is run, it uses the GitHub Actions environment. It  lists all Markdown files in the current directory and fetches and prints the last modified date for each file using the GitHub API. The script prints error messages to the console if there are issues with GitHub API requests or if it fails to retrieve the last modified date for a file.
+
+Here's a screenshot of the end result:
+![image](https://github.com/23W-GBAC/Youssef.Daoud/assets/63427786/68991de0-dcc7-486c-b651-c558bf4a9762)
+
 
 ## Advantages:
 To me, the advantages mostly lie in this solution's simplicity and the fact that it didn't take a long time to get running compared to the other previously-tried methods. There's also enough room for improving the whole thing in different ways to give it more usage in the future for things like being integrated into a continuous integration/continuous deployment (CI/CD) pipeline or visibility notifications and stuff like that.
