@@ -1,3 +1,5 @@
+## [Main Page](README.md) / [1st Automation Post](AutomationPostNo1.md) / [2nd Automation Post](AutomationPostNo2.md) / [3rd Automation Post](AutomationPostNo3.md) / 4th Automation Post 
+
 #  Cost-benefit analysis of the project:
 
 All in all, I'm mostly satisified with the end result but I wish to improve on it even further in the upcoming weeks or months. It does the job well enough and I'm not complaining but I would have at least liked if I could find a way to add the dates to the markdown files sooner than later, but I'll figure it out eventually.
