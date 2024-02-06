@@ -22,15 +22,16 @@ GitHub provides an API called GraphQL that allows people using it to query speci
 Pros:
 - Precision: GraphQL queries can be tailored to retrieve only the required information, reducing unnecessary data transfer and improving performance. Consistency since the GraphQL API provides a consistent interface that remains stable across different versions, reducing the likelihood of breaking changes.
 Cons:
-- Authentication: Accessing the GitHub GraphQL API requires authentication, which may involve generating and managing access tokens. Rate Limits; the API imposes rate limits, potentially affecting the speed of the automation process, especially in cases of frequent queries which can cause trouble later down the road.
+- Accessing the GitHub GraphQL API requires authentication, which involves generating and managing access tokens and they can be pretty fussy to deal with. Rate Limits are also a thing; the API imposes rate limits which essentially means it limits network traffic to conserve bandwith and whatnot, potentially affecting the speed of the automation process, especially in cases of frequent queries which can cause trouble later down the road.
 
 ## Using GitHub Actions:
-The final approach that I've decided to try out; it involved uploading the automation script that I wrote in python onto the repository and linking it with a workflow file that automatically checks the logs of the markdown files periodically every 1 minute or so, and whenever a push is done onto the repo too. The dates can then be checked by going to the checks section and checking the result of the script.
+The final approach that I've decided to try out. It involved uploading the automation script that I wrote in python onto the repository and linking it with a workflow file that automatically checks the logs of the markdown files periodically every 1 minute or so, and whenever a push is done onto the repo too. The dates can then be checked by going to the checks section and checking the result of the script or by using a terminal to check the results of the python script.
+
+This approach also took me a while to get running but it turned out to be the easiest of them all for me, all things considered. I managed to actually get the whole thing running in less than a day and it's been quite helpful so far though are still some obstacles facing me with getting it to run exactly like I want it to but all in all this is as good as it got for me. I'll explain more about its inner workings and how the python script works in the following post/article. 
 
 ## Conclusion:
-Automating the retrieval of the last modification date of Markdown files in a GitHub repository offers several solutions, each with its own set of pros and cons. GitHub Actions provides a seamless integration within the GitHub ecosystem, while Git command line and scripting offer platform independence and customization. The GitHub GraphQL API offers precision and consistency, but with considerations such as authentication and rate limits.
-
-The choice of the most suitable solution depends on factors such as the specific use case, the level of customization required, and the familiarity of the user with the respective technologies. Ultimately, selecting the right automation approach can significantly enhance the efficiency of managing and maintaining GitHub repositories, contributing to a streamlined and well-organized development workflow.
+Automating the whole ordeal seemed like it would be going nowhere to me at first because almost every aspect of the previous approaches (sans the first approach obviously) seemed hard to understand and do at first but as time went and I got more comfortable with GitHub as a whole I've managed to find my way around this, ending up with a solution that, while not optimal, is close enough to what I need. GitHub Actions provides a rather seamless integration with the rest of GitHub so that's why I really ended up using it, due to the minimal amounts of fuss required to set it up and getting it running.
+Of course, it should go without saying that the choice of the most suitable solution for doing the automation depends on a lot of different factors that others may have differently than I do, such as the level of customization required, and the familiarity of the user with the respective user interfaces/technologies. 
 
 
 
