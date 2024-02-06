@@ -28,19 +28,6 @@ def get_last_modified(username, repository, file_path, github_token=None):
         print(f"Error: {e}")
         return None
 
-def update_markdown_file(file_path, last_modified_date_str):
-    try:
-        # Read the content of the Markdown file
-        with open(file_path, 'a', encoding='utf-8') as file:
-            # Add a new last modification date section at the end of the file
-            file.write(f'\n\nLast modified: {last_modified_date_str}')
-
-        print(f"File: {file_path}, Last modified: {last_modified_date_str} (Updated at the end of the file)")
-
-    except Exception as e:
-        print(f"Error updating Markdown file: {e}")
-
-
 def main():
     if 'GITHUB_ACTIONS' in os.environ:
         # Running in GitHub Actions environment
@@ -70,7 +57,7 @@ def main():
             # Update the Markdown file with the last modified date
             update_markdown_file(file_path, last_modified_date_str)
             
-            print(f"File: {file_name}, Last modified: {last_modified_date_str} (Updated in the file)")
+            print(f"File: {file_name}, Last modified: {last_modified_date_str}")
         else:
             print(f"Unable to retrieve last modification date for file: {file_name}")
 
