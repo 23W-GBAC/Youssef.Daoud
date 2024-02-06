@@ -1,3 +1,5 @@
+## [Main Page](README.md) / [1st Automation Post](AutomationPostNo1.md) / 2nd Automation Post / [3rd Automation Post](AutomationPostNo3.md) / [4th Automation Post](AutomationPostNo4.md) 
+
 # Exploring possible solutions for the issue:
 
 Over the course of the past couple of weeks, I've been trying to look for an optimal and fuss-free solution to this little problem of mine and decided on many different ideas before settling on the final and, to me at least, the best solution out of all the following. Here are the ones I tried before, and why they didn't stick with me.
