@@ -7,8 +7,8 @@ The process of implementing GitHub Actions for can be broken down into several s
 The initial step involves defining a workflow file within the repository's .github/workflows directory. This .yaml file, in my case named check_last_modified.yml, contains instructions for GitHub Actions on how to execute the deployment process. Within this file, the workflow's triggers, jobs, and associated steps are defined. 
 
 The contents of the file are as follows:
-name: Check Last Modified
 
+name: Check Last Modified
 on:
   schedule:
     - cron: '*/1 * * * *'  # Run every 1 minute
