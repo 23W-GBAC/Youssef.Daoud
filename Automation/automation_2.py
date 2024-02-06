@@ -31,23 +31,11 @@ def get_last_modified(username, repository, file_path, github_token=None):
 def update_markdown_file(file_path, last_modified_date_str):
     try:
         # Read the content of the Markdown file
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-
-        # Check if there is already a last modification date in the file
-        pattern = re.compile(r'Last modified: (.+)')
-        match = pattern.search(content)
-
-        if match:
-            # Update the existing last modification date
-            content = pattern.sub(f'Last modified: {last_modified_date_str}', content)
-        else:
+        with open(file_path, 'a', encoding='utf-8') as file:
             # Add a new last modification date section at the end of the file
-            content += f'\n\nLast modified: {last_modified_date_str}'
+            file.write(f'\n\nLast modified: {last_modified_date_str}')
 
-        # Write the updated content back to the Markdown file
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(content)
+        print(f"File: {file_path}, Last modified: {last_modified_date_str} (Updated at the end of the file)")
 
     except Exception as e:
         print(f"Error updating Markdown file: {e}")
