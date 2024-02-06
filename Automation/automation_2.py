@@ -35,7 +35,7 @@ def update_markdown_file(file_path, last_modified_date_str):
             content = file.read()
 
         # Check if there is already a last modification date in the file
-        pattern = re.compile(r'Last modified: (\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})')
+        pattern = re.compile(r'Last modified: (.+)')
         match = pattern.search(content)
 
         if match:
