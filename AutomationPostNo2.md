@@ -7,7 +7,7 @@ The very first thing that came to mind was just writing down when I'd last edite
 Pros:
 - Easy enough to do, no need for any prior coding experience, just needed to remind myself to write down the last date and time I edited a page/post at
 Cons:
-- Not very accurate, easily forgettable, not very efficent when there's a lot of posts written at different times, not very time-efficent either
+- Not very accurate, easily forgettable, not very efficent when there's a lot of posts written at different times, not very time-efficent either. GitHub already does it which makes the whole thing kinda useless to do by hand.
 
 ## Using Git through the command line:
 Another approach that I thought of and tried is using git in a command line environment. It involved using Git commands and scripting to fetch information about the last modification date of the markdown files on my blog. I decided on using Python too to write the script that would automate the process because of my familiarity with the language. 
