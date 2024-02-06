@@ -1,3 +1,5 @@
+## [Main Page](README.md) / [1st Automation Post](AutomationNo1.md) / [2nd Automation Post](AutomationPostNo2.md) / 3rd Automation Post / [4th Automation Post](AutomationPostNo4.md) 
+
 # Final Solution, including the potential advantages and disadvantages:
 
 Like I've stated before, I decided on using GitHub Actions to automate a python script that I wrote to check GitHub's logs for the last modification date of all the markdown files in the root directory of my repository. The end result pleased me quite a bit but it left me wanting to do more in regards to how it's shown. For now the script only shows the dates in a terminal or on the GitHub Actions section of the repo which, while good enough for now, can be streamlined further by adding the "Last modified" dates to their respective markdown files automatically. That's something that I've attempted doing before but unfortunately to no avail for reasons I'm not yet aware of. The following is an explanation of how the script works and how GitHub Actions automates the whole process through a simple command.
