@@ -2,6 +2,7 @@ import os
 import requests
 from datetime import datetime
 import pytz
+import markdown
 
 def get_last_modified(username, repository, file_path, github_token=None):
     try:
