@@ -28,3 +28,5 @@ jobs:
         run: python Automation/automation_2.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+env:
+          DEBUG: true
