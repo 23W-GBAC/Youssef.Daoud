@@ -30,23 +30,25 @@ def get_last_modified(username, repository, file_path, github_token=None):
 
 def update_markdown_file(file_path, last_modified_date_str):
     try:
-        with open(file_path, 'r') as file:
-            content = file.readlines()
+        # Read the content of the Markdown file
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
 
-        # Define a regular expression pattern to match "Last modified:" lines
-        pattern = re.compile(r'^Last modified:.*$')
+        # Check if there is already a last modification date in the file
+        pattern = re.compile(r'Last modified: (\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})')
+        match = pattern.search(content)
 
-        # Iterate through lines to find and update the "Last modified" line
-        for i, line in enumerate(content):
-            if pattern.match(line):
-                content[i] = f"Last modified: {last_modified_date_str}\n"
-                break
+        if match:
+            # Update the existing last modification date
+            content = pattern.sub(f'Last modified: {last_modified_date_str}', content)
         else:
-            # If the "Last modified" line doesn't exist, add it to the end of the file
-            content.append(f"\nLast modified: {last_modified_date_str}\n")
+            # Add a new last modification date section at the end of the file
+            content += f'\n\nLast modified: {last_modified_date_str}'
 
-        with open(file_path, 'w') as file:
-            file.writelines(content)
+        # Write the updated content back to the Markdown file
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(content)
+
     except Exception as e:
         print(f"Error updating Markdown file: {e}")
 
