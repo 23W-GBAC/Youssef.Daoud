@@ -63,7 +63,7 @@ def main():
         github_token = None
 
     # List all Markdown files in the root directory
-    markdown_files = [file for file in os.listdir('../') if file.endswith('.md')]
+    markdown_files = [file for file in os.listdir() if file.endswith('.md')]
 
     # Iterate through each Markdown file and get the last modified date
     for file_name in markdown_files:
