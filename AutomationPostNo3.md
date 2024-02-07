@@ -81,3 +81,5 @@ To me, the advantages mostly lie in this solution's simplicity and the fact that
 
 ## Disadvantages:
 Of course there are some disadvantages to the whole approach too, it's not really perfect; the GitHub API is subject to rate limiting, so too many script calls will probably result in rate-limiting issues. The whole script relies on the availability and reliability of GitHub's API so if GitHub experiences downtime or if there are changes to the API, the script could stop wokring automatically or something like that. There's also the fact that the script is dependent on GitHub for working so it can't be used elsewhere in an automated way easily without figuring out a whole new way to make it work elsewhere.
+
+There's also the problem that I couldn't get the dates to actually get displayed in the markdown files themselves for some reason, no matter how much I changed the code or GitHub Actions workflow. I assume the lack of error messages meant that it's probably a syntax issue but it got to the point where I couldn't find any solution for this within a short timeframe, so I decided to opt out of implementing it.
